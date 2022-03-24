@@ -22,7 +22,7 @@ print(x)
 
 "Search for the first white-space character in the string:"
 txt = "The rain in Spain"
-x = re.search("\s", txt)
+x = re.search(" ", txt)
 print("The first white-space character is located in position:", x.start())
 
 "Make a search that returns no match:"
@@ -32,22 +32,22 @@ print(x)
 
 "Split at each white-space character:"
 txt = "The rain in Spain"
-x = re.split("\s", txt)
+x = re.split(" ", txt)
 print(x)
 
 "Split the string only at the first occurrence:"
 txt = "The rain in Spain"
-x = re.split("\s", txt, 1)
+x = re.split(" ", txt, 1)
 print(x)
 
 "Replace every white-space character with the number 9:"
 txt = "The rain in Spain"
-x = re.sub("\s", "9", txt)
+x = re.sub(" ", "9", txt)
 print(x)
 
 "Replace the first 2 occurrences:"
 txt = "The rain in Spain"
-x = re.sub("\s", "9", txt, 2)
+x = re.sub(" ", "9", txt, 2)
 print(x)
 
 "Do a search that will return a Match Object:"
@@ -69,19 +69,3 @@ print(x.string)
 txt = "The rain in Spain"
 x = re.search(r"\bS\w+", txt)
 print(x.group())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
